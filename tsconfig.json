@@ -4,14 +4,14 @@
     "lib": ["dom", "dom.iterable", "esnext"],
     "baseUrl": ".",
     "paths": {
-      "~components/*": ["components/*"],
-      "~models/*": ["models/*"],
-      "~utils/*": ["utils/*"],
-      "~styles/*": ["styles/*"],
-      "~layout/*": ["layout/*"],
-      "~hooks/*": ["hooks/*"],
-      "~lib/*": ["lib/*"],
-      "~types/*": ["types/*"]
+      "~components/*": ["src/components/*"],
+      "~models/*": ["src/models/*"],
+      "~utils/*": ["src/utils/*"],
+      "~styles/*": ["src/styles/*"],
+      "~layout/*": ["src/layout/*"],
+      "~hooks/*": ["src/hooks/*"],
+      "~lib/*": ["src/lib/*"],
+      "~types/*": ["src/types/*"]
     },
     "allowJs": true,
     "skipLibCheck": true,
