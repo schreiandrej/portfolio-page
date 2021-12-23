@@ -18,7 +18,7 @@
   --color-text-heading-4: hsl(163, 92%, 70%);
 
   /* text*/
-  --color-text-base: hsl(0, 1%, 70%);
+  --color-text-base: hsl(221, 20%, 21%);
   --color-text-inverted: hsl(0, 0%, 70%);
   --color-text-accent: hsl(236, 25%, 43%);
 
@@ -33,7 +33,7 @@
 .light {
   /* background */
   --color-background: hsl(0, 0%, 92%);
-  --color-background-accent: hsl(49, 0%, 97%);
+  --color-background-accent: rgb(152, 158, 212);
 
   /* title */
   --color-title: hsl(0, 0%, 100%);
@@ -55,5 +55,5 @@
   --color-border-active: hsl(0, 0%, 46%);
 
   /* stroke */
-  --color-stroke: hsl(0, 0%, 0%);
+  --color-stroke: hsl(226, 59%, 47%);
 }

@@ -40,6 +40,5 @@
     /* Remove onclick Border Color Change */
     /* REFERENCE: https://bit.ly/2KFgNG7 */
     outline: none;
-    background-color: white !important;
   }
 }

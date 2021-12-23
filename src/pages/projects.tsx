@@ -32,10 +32,9 @@ export default function Projects({ reposRaw }: ProjetsProps) {
 
   return (
     <motion.section
-      id='projects-section'
-      className='relative flex flex-col items-center w-full h-screen gap-1 py-16 text-center opacity-0 bg-base justify-evenly'
+      className='relative flex flex-col items-center w-full min-h-screen gap-1 py-16 text-center bg-base justify-evenly'
       animate={{ opacity: [0, 1] }}
-      transition={{ delay: 0.5, duration: 1, ease: 'easeInOut' }}
+      transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
     >
       {repos &&
         repos.map(

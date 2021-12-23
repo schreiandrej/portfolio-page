@@ -13,7 +13,7 @@ type Props = {
 const PostPreview = ({ title, date, excerpt, topics, slug }: Props) => {
   return (
     <Link as={`/posts/${slug}`} href='/posts/[slug]'>
-      <a className='noFlash active:scale-105 active:opacity-70'>
+      <a className='p-6 text-left transition-all duration-300 ease-out border rounded-lg noFlash hover:border-base hover:bg-accent'>
         <h3 className='mb-3 text-3xl leading-snug text-heading_1'>{title}</h3>
         <p className='mb-4 text-base text-lg leading-relaxed'>{excerpt}</p>
         <div className='flex justify-between'>

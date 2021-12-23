@@ -67,20 +67,22 @@ export const Navbar = ({}: NavbarProps): JSX.Element => {
                 {({ active }) => {
                   return item.type === 'external' ? (
                     <a
-                      className={` hover:text-blue-900 hover:font-semibold bg-base z-10 flex justify-end gap-1 flex-row-reverse`}
+                      className={` bg-base z-10 flex justify-end gap-1 flex-row-reverse`}
                       href={item.link}
                     >
-                      <p>{item.linkText}</p>
+                      <p className='hover:font-semibold hover:text-blue-700'>
+                        {item.linkText}
+                      </p>
                       <p>{item.icon}</p>
                     </a>
                   ) : (
                     <MyLink href={item.link}>
                       <div
-                        className={`${
-                          active && 'bg-blue-500'
-                        } hover:text-blue-900 hover:font-semibold bg-base z-10 flex justify-end gap-1 flex-row-reverse`}
+                        className={`  bg-base z-10 flex justify-end gap-1 flex-row-reverse`}
                       >
-                        <p>{item.linkText}</p>
+                        <p className='hover:text-blue-700 hover:font-semibold'>
+                          {item.linkText}
+                        </p>
                         <p>{item.icon}</p>
                       </div>
                     </MyLink>
