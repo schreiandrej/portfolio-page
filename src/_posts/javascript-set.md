@@ -14,28 +14,11 @@ Im Grunde genommen dient das Set als einen Funktionserweiterung für das Array.
 
 Aber zunächst erstmal zu den Grundmethoden eines Sets.
 
+<script src="https://gist.github.com/schreiandrej/377e0bdc31f1ad7c1e86d9d340e6bb56.js"></script>
+
 ## Grundmethoden
 
-```js
-// Set erzeugen
-const mySet = new Set([4, 5, 6, 8])
-
-// Der Rückgabewert lautet: Set {4, 5, 6, 8, 9}
-mySet.add(9)
-
-// Das Element wird gelöscht und
-// man erhält true zurück
-mySet.delete(9)
-
-// Hier erhält man ein true oder ein false als Antwort
-mySet.has(7)
-
-// gibt die die Länge des Sets aus (size statt length)
-mySet.size
-
-// der Rügabewert lautet 4, 5, 6, 8
-for (let item of mySet) console.log(item)
-```
+![Code Snippet](/assets/post_2/code_1.svg)
 
 ## Anwendung
 
@@ -43,11 +26,4 @@ Kommen wir zu den Code Beispielen die füe dich nützlich sein könnten. Das Set
 
 Das naheligendenst Beispiel ist, das Entfernen von doppelten Werten!
 
-```js
-const arrayOne = [4, 6, 6, 6, 5, 4, 3, 2]
-const arrayTwo = [6, 7, 7, 8, 9, 2, 1]
-
-const mySet = new Set([...arrayOne, ...arrayTwo])
-
-console.log([...mySet]) // [4, 6, 5, 3, 2, 7, 8, 9]
-```
+![Code Snippet](/assets/post_2/code_2.svg)

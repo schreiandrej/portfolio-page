@@ -16,6 +16,7 @@ type Props = {
 
 const Post = ({ post }: Props) => {
   const router = useRouter()
+
   if (!router.isFallback && !post?.slug) {
     return <ErrorPage statusCode={404} />
   }
@@ -24,24 +25,26 @@ const Post = ({ post }: Props) => {
       {router.isFallback ? (
         <PostTitle>Loading…</PostTitle>
       ) : (
-        <motion.article
-          className='relative flex flex-col items-center w-full min-h-screen gap-1 py-16 text-center bg-base justify-evenly'
-          animate={{ opacity: [0, 1] }}
-          transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
-        >
+        <>
           <Head>
             <title>
               {post.title} | Next.js Blog Example with {CMS_NAME}
             </title>
             <meta property='og:image' content={post.ogImage.url} />
           </Head>
-          <PostHeader
-            title={post.title}
-            date={post.date}
-            topics={post.topics}
-          />
-          <PostBody content={post.content} />
-        </motion.article>
+          <motion.article
+            className='relative flex flex-col items-center w-full min-h-screen gap-1 py-16 bg-base'
+            animate={{ opacity: [0, 1] }}
+            transition={{ delay: 0.3, duration: 1, ease: 'easeInOut' }}
+          >
+            <PostHeader
+              title={post.title}
+              date={post.date}
+              topics={post.topics}
+            />
+            <PostBody content={post.content} />
+          </motion.article>
+        </>
       )}
     </div>
   )

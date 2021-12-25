@@ -7,7 +7,7 @@ type Props = {
   allPosts: Post[]
 }
 
-const Index = ({ allPosts }: Props) => {
+const Blog = ({ allPosts }: Props) => {
   return (
     <motion.section
       className='relative flex flex-col items-center w-full min-h-screen gap-1 py-16 text-center bg-base justify-evenly'
@@ -21,7 +21,7 @@ const Index = ({ allPosts }: Props) => {
   )
 }
 
-export default Index
+export default Blog
 
 export const getStaticProps = async () => {
   const allPosts = getAllPosts(['title', 'date', 'slug', 'topics', 'excerpt'])
